@@ -8,24 +8,23 @@ import ceyhun.erturk.model.Account;
 import ceyhun.erturk.repository.AccountDao;
 import ceyhun.erturk.util.CurrencyUtil;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 
 public final class AccountDaoImpl extends AccountDao {
 
-    //No need to Concurrent HashMap, requests already in lock
     private Map<Long, Optional<Account>> accounts;
 
     private static AccountDaoImpl accountDao;
 
 
     private AccountDaoImpl() {
-        accounts = new HashMap();
+        accounts = new ConcurrentHashMap();
     }
 
     //No need to synchronized, requests are already in lock

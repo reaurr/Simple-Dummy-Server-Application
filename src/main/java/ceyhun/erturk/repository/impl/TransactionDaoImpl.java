@@ -15,7 +15,7 @@ public final class TransactionDaoImpl extends TransactionDao {
     private static TransactionDaoImpl transactionDao;
 
     private TransactionDaoImpl() {
-        transactionList = new ArrayList();
+        transactionList =  Collections.synchronizedList(new ArrayList());
     }
 
     //No need to synchronized, requests are already in lock
