@@ -18,7 +18,7 @@ public final class TransactionDaoImpl extends TransactionDao {
         transactionList =  Collections.synchronizedList(new ArrayList());
     }
 
-    //No need to synchronized, requests are already in lock
+    
     public final static TransactionDaoImpl getInstance() {
         if (transactionDao == null) {
             transactionDao = new TransactionDaoImpl();

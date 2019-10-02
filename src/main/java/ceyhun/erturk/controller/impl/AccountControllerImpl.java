@@ -23,7 +23,7 @@ public final class AccountControllerImpl extends AccountController {
     private AccountControllerImpl() {
     }
 
-    //No need to synchronized, requests are already in lock
+
     public final static AccountControllerImpl getInstance() {
         if (accountController == null) {
             accountController = new AccountControllerImpl();

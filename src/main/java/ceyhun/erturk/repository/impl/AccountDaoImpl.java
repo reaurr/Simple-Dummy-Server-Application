@@ -27,7 +27,7 @@ public final class AccountDaoImpl extends AccountDao {
         accounts = new ConcurrentHashMap();
     }
 
-    //No need to synchronized, requests are already in lock
+
     public final static AccountDaoImpl getInstance() {
         if (accountDao == null) {
             accountDao = new AccountDaoImpl();

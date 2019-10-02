@@ -23,7 +23,7 @@ public final class TransactionControllerImpl extends TransactionController {
     private TransactionControllerImpl() {
     }
 
-    //No need to synchronized, requests are already in lock
+
     public final static TransactionControllerImpl getInstance() {
         if (transactionController == null) {
             transactionController = new TransactionControllerImpl();
