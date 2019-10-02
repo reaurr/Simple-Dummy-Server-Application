@@ -4,7 +4,7 @@ Simple money transfer application for revolut
 
 *********************ACCOUNT*********************
 
-Create Account :
+1) Create Account :
 
 Http Method : POST
 
@@ -19,14 +19,14 @@ Body :
 }
 
 
-Get All Accounts :
+2) Get All Accounts :
 
 Http Method : GET
 
 URL : http://localhost:8080/api/account/accounts
 
 
-Get Account By accountId :
+3) Get Account By accountId :
 
 Http Method : GET
 
@@ -34,7 +34,7 @@ URL : http://localhost:8080/api/account/{accountId}
 
 
 
-Get Account Balance By accountId :
+4) Get Account Balance By accountId :
 
 Http Method : GET
 
@@ -43,7 +43,7 @@ URL : http://localhost:8080/api/account/balance/{accountId}
 
 *********************TRANSACTION*********************
 
-Make Transfer Between Accounts :
+1) Make Transfer Between Accounts :
 
 Http Method : POST
 
@@ -58,7 +58,7 @@ Body :
 
 
 
-Get Transaction By tansactionId :
+2) Get Transaction By tansactionId :
 
 Http Method : GET
 
@@ -66,7 +66,7 @@ URL : http://localhost:8080/api/transaction/{tansactionId}
 
 
 
-Get All Transactions :
+3) Get All Transactions :
 
 Http Method : GET
 
