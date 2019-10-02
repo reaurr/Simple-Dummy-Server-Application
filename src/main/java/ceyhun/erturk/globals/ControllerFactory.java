@@ -16,7 +16,7 @@ public class ControllerFactory {
     }
 
 
-    public static BaseController getController(ControlType type) {
+    public synchronized static BaseController getController(ControlType type) {
         if (type == ControlType.ACOOUNT) {
             if (baseController == null) {
                 baseController =  AccountControllerImpl.getInstance();

@@ -16,7 +16,7 @@ public class DaoFactory {
     }
 
 
-    public static BaseDao getBaseDao(DaoType type) {
+    public synchronized static BaseDao getBaseDao(DaoType type) {
         if (type == DaoType.ACOOUNT) {
             if (baseDao == null) {
                 baseDao =  AccountDaoImpl.getInstance();
