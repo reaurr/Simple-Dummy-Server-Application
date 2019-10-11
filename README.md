@@ -1,5 +1,5 @@
 # bankmoneytransfer
-Simple money transfer application for revolut
+Simple money transfer application.
 
 
 *********************ACCOUNT*********************
