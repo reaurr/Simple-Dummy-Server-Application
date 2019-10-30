@@ -1,4 +1,4 @@
-# serverApplication
+# server application
 Simple Dummy Server Application.
 
 
