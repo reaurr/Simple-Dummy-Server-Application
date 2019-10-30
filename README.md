@@ -1,5 +1,5 @@
-# bankmoneytransfer
-Simple money transfer application.
+# serverApplication
+Simple Dummy Server Application.
 
 
 *********************ACCOUNT*********************
